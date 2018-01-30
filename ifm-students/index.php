@@ -13,7 +13,7 @@
 
     <style media="screen">
       .manageItem{
-        width: 90%;
+        width: 95%;
         margin: auto;
       }
       table {
