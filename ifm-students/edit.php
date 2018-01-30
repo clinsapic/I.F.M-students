@@ -40,7 +40,7 @@ if($_GET['id']) {
       <table cellspacing ="0" cellpadding="0">
         <tr>
           <th>Aina Ya Kifaa</th>
-          <td><input type="text" name="aina_kifaa" placeholder="ain ya kifaa" value="<?php echo $data['aina_kifaa'];?>" autocomplete="off"></td>
+          <td><input type="text" name="aina_kifaa" placeholder="aina ya kifaa" value="<?php echo $data['aina_kifaa'];?>" autocomplete="off"></td>
         </tr>
         <tr>
           <th>Model</th>
