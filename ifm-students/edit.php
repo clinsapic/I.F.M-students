@@ -76,7 +76,7 @@ if($_GET['id']) {
         </tr>
 
         <tr>
-          <th>Ain ya HDD</th>
+          <th>Aina ya HDD</th>
           <td><input type="text" name="hdd"  placeholder="Aina ya HDD" value="<?php echo $data['aina_hdd'];?>" autocomplete="off"></td>
         </tr>
 
