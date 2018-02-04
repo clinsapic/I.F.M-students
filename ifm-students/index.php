@@ -1,5 +1,5 @@
 <?php
-
+//connection required here
    require_once 'php_action/db_connect.php';
 
 ?>
@@ -46,6 +46,7 @@
         </thead>
         <tbody>
           <?php
+           // query to fetch from the table vifaa in the ifm_tool databse
           $sql = "SELECT * FROM vifaa WHERE active = 1 ";
           $result = $connect->query($sql);
 
