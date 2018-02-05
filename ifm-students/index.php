@@ -1,5 +1,5 @@
 <?php
-//connection required here
+
    require_once 'php_action/db_connect.php';
 
 ?>
@@ -8,45 +8,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <title>Teknohama</title>
+
+   <link  type="text/css" href="css/stylesheet.css"  rel="stylesheet">
 
     <style media="screen">
       .manageItem{
         width: 95%;
         margin: auto;
       }
-      table {
+      #tabody{
         width: 100%;
         margin-top: 35px;
       }
+
+      #col{
+        background-color: grey;
+        width: 150px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+      }
+
     </style>
   </head>
   <body>
 
     <div class="manageItem">
-      <a href="create.php"><button type="submit" name="button">Add Items</button></a>
-      <table  border="1" cellspacing="0" cellpadding ="0">
+      <a href="create.php"><button type="submit" name="button" id="push">Add Items</button></a>
+      <table id="tabody" border="1" cellspacing="0" cellpadding ="0">
         <thead>
         <tr>
-          <th>Ain ya kifaa</th>
-          <th>Model</th>
-          <th>num_kifaa</th>
-          <th>tarehe ya kununuliwa</th>
-          <th>kinatumika</th>
-          <th>kifaa_serial</th>
-          <th>badili_kifa</th>
-          <th>ain_hdd</th>
-          <th>ain_hdd_awali</th>
-          <th>serial_num</th>
-          <th>ime badilishwa lini</th>
-          <th>imetunzwa wapi</th>
-          <th style="width:130px;">action</th>
+          <th id="col">Aina ya kifaa</th>
+          <th id="col">Model</th>
+          <th id="col">Namba ya kifaa</th>
+          <th id="col">Tarehe ya kununuliwa</th>
+          <th id="col">Kinatumika</th>
+          <th id="col">Kifaa serial</th>
+          <th id="col">Badili kifa</th>
+          <th id="col">Aina ya hdd</th>
+          <th id="col">Aina ya hdd ya awali</th>
+          <th id="col">Serial ya Namba</th>
+          <th id="col">Ime badilishwa lini</th>
+          <th id="col">Imetunzwa wapi</th>
+          <th style="width:170px;" id="col">Action</th>
         </tr>
         </thead>
         <tbody>
           <?php
-           // query to fetch from the table vifaa in the ifm_tool databse
           $sql = "SELECT * FROM vifaa WHERE active = 1 ";
           $result = $connect->query($sql);
 
@@ -66,8 +78,14 @@
                     <td>".$row['change_date']."</td>
                     <td>".$row['store']."</td>
                     <td>
-                     <a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>
-                     <a href='remove.php?id=".$row['id']."'><button type='button'>Delete</button></a>
+                    <span>
+                      <a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>
+                    </span>
+                    <span>
+                       <a href='remove.php?id=".$row['id']."'><button type='button'>Delete</button></a>
+                    </span>
+                     
+
                     </td>
 
               </tr>";
