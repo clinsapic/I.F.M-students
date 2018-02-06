@@ -4,17 +4,7 @@
     <meta charset="utf-8">
     <title>ADD items</title>
 
-    <style media="screen">
-      fieldset{
-        margin: auto;
-        margin-top: 100px;
-        width: 60%;
-      }
-      table tr th{
-        padding-top: 20px;
-
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <fieldset>

@@ -5,7 +5,7 @@ if($_GET['id']) {
     $id = $_GET['id'];
 
     $sql = "SELECT * FROM  vifaa WHERE id ={$id}";
-    $result = $connect->query($sql);
+    $output = $connect->query($sql);
     $data = $result->fetch_assoc();
 
 

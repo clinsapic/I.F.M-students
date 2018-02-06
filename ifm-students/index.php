@@ -1,5 +1,5 @@
 <?php
-
+//connection required here
    require_once 'php_action/db_connect.php';
 
 ?>
@@ -9,18 +9,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>Teknohama</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+=======
+    <title>Teknohama-Home</title>
+>>>>>>> ccd4d5c73b7887d46b4ed7a97f0ce752b9e7d7b3
 
     <style media="screen">
       .manageItem{
-        width: 90%;
+        width: 95%;
         margin: auto;
       }
       table {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 35px;
       }
     </style>
   </head>
@@ -48,6 +52,7 @@
         </thead>
         <tbody>
           <?php
+           // query to fetch from the table vifaa in the ifm_tool databse
           $sql = "SELECT * FROM vifaa WHERE active = 1 ";
           $result = $connect->query($sql);
 

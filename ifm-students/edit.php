@@ -19,18 +19,8 @@ if($_GET['id']) {
   <head>
     <meta charset="utf-8">
     <title>Update</title>
-
-    <style media="screen">
-      fieldset{
-        margin: auto;
-        margin-top: 100px;
-        width: 60%;
-      }
-      table tr th{
-        padding-top: 20px;
-
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
   </head>
   <body>
     <fieldset>
@@ -86,7 +76,7 @@ if($_GET['id']) {
         </tr>
 
         <tr>
-          <th>Ain ya HDD</th>
+          <th>Aina ya HDD</th>
           <td><input type="text" name="hdd"  placeholder="Aina ya HDD" value="<?php echo $data['aina_hdd'];?>" autocomplete="off"></td>
         </tr>
 
