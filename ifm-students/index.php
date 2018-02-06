@@ -9,7 +9,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Teknohama</title>
+    <title>Teknohama-Home</title>
 
     <style media="screen">
       .manageItem{
