@@ -24,7 +24,7 @@ if($_GET['id']) {
   </head>
   <body>
     <fieldset>
-      <legend>update items</legend>
+      <legend>update items here</legend>
 
         <form class="" action="php_action/update.php" method="post">
       <table cellspacing ="0" cellpadding="0">
