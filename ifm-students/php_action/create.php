@@ -7,14 +7,14 @@ require_once 'db_connect.php';
       $aina_kifaa = $_POST['aina_kifaa'];
       $model = $_POST['model'];
       $num_kifaa = $_POST['num_kifaa'];
-      $tarehe_buy = date("Y-m-d H:i:s");
+      $tarehe_buy = $_POST['tarehe_buy'];
       $kinatumika = $_POST['kinatumika'];
       $kifaa_serial = $_POST['kifaa_serial'];
       $badili_kifaa =$_POST['badilisha'];
       $aina_hdd = $_POST['hdd'];
       $aina_hdd_awali = $_POST['hdd_awali'];
       $serial_num = $_POST['serial_num'];
-      $change_date = date("Y-m-d H:i:s");
+      $change_date =$_POST['change_date'];
       $store = $_POST['storage'];
 
         $sql = "INSERT INTO vifaa (aina_kifaa,model,num_kifaa,tarehe_buy,kinatumika,kifaa_serial,

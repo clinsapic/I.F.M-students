@@ -42,7 +42,7 @@
 
         <tr>
           <th>tarehe ya kununuliwa</th>
-          <td><input type="text" name="date" placeholder="Tarehe ya kununuliwa" autocomplete="off"></td>
+          <td><input type="text" name="tarehe_buy" placeholder="Tarehe ya kununuliwa" autocomplete="off"></td>
         </tr>
 
         <tr>

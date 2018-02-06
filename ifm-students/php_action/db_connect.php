@@ -12,7 +12,7 @@
     if($connect->connect_error) {
       die("connection failed to be stablish plz check your server configurations" . $connect->connect_error);
     }else {
-    #  echo "succefully connected";
+    #echo "succefully connected";
     }
 
 
